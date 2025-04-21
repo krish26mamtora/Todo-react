@@ -15,8 +15,8 @@ function App() {
   const [search, setSearch] = useState('');
   const [sort, setSort] = useState('createdAt');
 
-  // API URL for local development
-  const API_URL = 'http://localhost:5001/api/todos';
+  // API URL for hosted backend on Render
+  const API_URL = 'https://todo-react-backend.onrender.com/api/todos';
 
   useEffect(() => {
     fetchTodos();
