@@ -15,8 +15,8 @@ function App() {
   const [search, setSearch] = useState('');
   const [sort, setSort] = useState('createdAt');
 
-  // API URL
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001/api/todos';
+  // API URL (hardcoded for deployment)
+  const API_URL = 'https://todo-react-backend.onrender.com/api/todos';
 
   useEffect(() => {
     fetchTodos();
